@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoNinjas</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">CryptoNinjas</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#sec">About</a></li>
+        <li><a href="#academy">Academy</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="img-container">
+      <img src="images/ninja.png" id="ninja1" class="ninjas" />
+      <img src="images/ninja.png" id="ninja2" class="ninjas" />
+      <img src="images/ninja.png" id="ninja3" class="ninjas" />
+      <!-- <img src="images/ninja.png" id="ninja4" class="ninjas">
+    <img src="images/ninja.png" id="ninja5" class="ninjas"> -->
+    </div>
+    <section>
+      <img src="images/stars.png" id="stars" />
+      <img src="images/moon.png" id="moon" />
+      <img src="images/mountains_behind.png" id="mountains_behind" />
+
+      <h2 id="text">На луната се стига със знания.</h2>
+      <a href="#sec" id="btn">Научи повече</a>
+      <img src="images/mountains_front.png" id="mountains_front" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>За нас в кракто видео</h2>
+      <!-- <img src="images/ninjaonvideo.png"> -->
+      <div class="video">
+        <iframe
+          width="873,6"
+          height="491,4"
+          src="https://www.youtube.com/embed/vlHPFESAlG4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <h2 id="academy">Crypto Ninjas Academy</h2>
+      <p>
+        В академията ще научите как да използвате успешни техники и правила, как
+        да планирате, анализирате и управлявате риска в крипто пазара,
+        използвайки методи и стратегии на Crypto Ninja, LACHOZ и Георги
+        Джамбазов (маркет мейкър на GOLD options към американски хедж фонд).<br /><br />Академията
+        е подходяща както за начинаещи така и за напреднали трейдъри или
+        инвеститори. Уроците се провеждат на живо в Telegram група от 21:00 часа
+        (BG Time). Продължителността на академията е 1 месец, 3 пъти седмично.
+        Приблизително по 2 часа на урок, които ще бъдат записвани като видео за
+        тези от вас, които нямат възможност да присъстват.<br /><br />След всеки
+        урок се провеждат и свободни дискусии, в които обсъждаме всички важни
+        въпроси. През останалото време 24/7 в групата се практикува и упражнява
+        наученото под формата на сетъпи (вход, стоп и таргет). Всички трейдинг
+        ресурси, индикатори и видео уроци, които ще предоставим, остават на
+        разположение и след края на академията.
+      </p>
+      <img src="images/telegram.png" />
+      
+    </div>
+    <div class="slideninja1">
+        <img src="images/ninjaslide.png" id="asd" />
+    </div>
+
+    <div class="sec" id="sec2">
+      <h2 id="academy_header">Общността след академията.</h2>
+      <p>
+        Тогава става магията. Всеки изгражда своите навици на търговия
+        благодарение на знанията след академията и е в постоянна симбиоза с
+        отсаналите нинджи в личните групи в дискорд и телеграм. Там се случва
+        работата в екип.
+      </p>
+      <img src="images/discord.png" />
+      <p>Обменят се идеи и сетъпи по цял ден като тези:</p>
+      <img src="images/setup1.png" />
+      <img src="images/setup2.png" />
+      <img src="images/setup3.png" />
+      <p>
+        Постоянно можеш да намериш не само с кого да си пишеш, но и говориш като
+        знаеш, че той ще бъде на твоето ниво на технически анализ и ще те
+        разбира/помага.
+      </p>
+    </div>
+
+    <script>
+      let ninja1 = document.getElementById("ninja1");
+      let ninja2 = document.getElementById("ninja2");
+      let ninja3 = document.getElementById("ninja3");
+      let ninja4 = document.getElementById("ninja4");
+      let ninja5 = document.getElementById("ninja5");
+      let starts = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let asd = document.getElementById("asd");
+      let mountains_behind = document.getElementById("mountains_behind");
+      let mountains_front = document.getElementById("mountains_front");
+      let btn = document.getElementById("btn");
+      let text = document.getElementById("text");
+      let header = document.querySelector("header");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        starts.style.left = value * 0.5 + "px";
+        moon.style.top = value * -1 + "px";
+        mountains_behind.style.top = value * 0.05 + "px";
+        mountains_front.style.top = value * 0 + "px";
+        text.style.marginRight = value * 4 + "px";
+        text.style.marginTop = value * 1.5 + "px";
+        btn.style.marginTop = value * 1.5 + "px";
+        header.style.top = value * 0.5 + "px";
+        ninja1.style.bottom = value * 2.5 + "px";
+        ninja1.style.marginLeft = value * 1.5 + "px";
+        ninja2.style.bottom = value * 2.5 + "px";
+        ninja2.style.marginLeft = value * 1.5 + "px";
+        ninja3.style.bottom = value * 2.5 + "px";
+        ninja3.style.marginLeft = value * 1.5 + "px";
+        ninja4.style.bottom = value * 2.5 + "px";
+        ninja4.style.marginLeft = value * 1.5 + "px";
+        ninja5.style.bottom = value * 2.5 + "px";
+        ninja5.style.marginLeft = value * 1.5 + "px";
+        ninja6.style.bottom = value * 2.5 + "px";
+        ninja6.style.marginLeft = value * 1.5 + "px";
+        asd.style.marginLeft = value * 5 + "px";
+      });
+    </script>
+  </body>
+</html>
