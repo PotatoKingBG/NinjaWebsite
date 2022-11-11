@@ -166,8 +166,9 @@ section img#mountains_front{
 }
 .sec p{
     margin-top: 1em;
-    font-size: 1.2em;
-    color: #fff;
+    margin-bottom: 2em;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
 }
 .sec img{
     margin-top: 2rem;
@@ -179,6 +180,45 @@ section img#mountains_front{
     margin-right:auto;
     display:inline-flex;
 }
+.sec3 {
+    width: 100%;
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    display: flex;
+    justify-content: center;
+    
+}
+.sec3 a{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.sec3 i{
+    color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 5rem;
+}
+
+.fa-discord:hover{
+    
+    color:#5460E6;
+    transition: 0.2s ease-in-out;
+}
+.fa-telegram:hover {
+    color:rgb(50,164,214);
+    transition: 0.2s ease-in-out;
+}
+.fa-youtube:hover {
+    color: #C31E1D;
+    transition: 0.2s ease-in-out;
+}
+.fa-twitter:hover{
+    color: #1C93E4;
+    transition: 0.2s ease-in-out;
+   
+}
+
 .slideninja1 {
     width: 100%;
     background: #1c0522;
@@ -196,4 +236,43 @@ section img#mountains_front{
     overflow: hidden;
     display:flex;
     margin-bottom: 20px;
+}
+.academyTextImg{
+    display:flex;
+}
+@media screen and (max-width: 1669px) { 
+    .academyTextImg{
+        display:block;
+        align-items: center;
+    }
+}
+footer i {
+    color: #fff;
+   
+    
+  
+}
+footer .icons{
+    display: flex;
+    justify-content: center;
+}
+footer a {
+    
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1rem;
+}
+footer p {
+    padding: 3vh;
+    margin: auto;
+    width: 50%;
+    color: #fff;
+    font-size: 2vh;
+    text-align: center;
+}
+footer {
+    height: 300px;
+    
+    overflow: hidden;
+    background: linear-gradient(to top,#000000,#1c0522);
 }
