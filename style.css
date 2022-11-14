@@ -242,10 +242,12 @@ section img#mountains_front{
 .video {
     background-repeat: no-repeat;
     background-image: url('/images/ninjaonvideo.png');
-    width: 100%;
+    
+    max-width:100%;
     overflow: hidden;
-    display:flex;
+    display: flex;
     margin-bottom: 20px;
+    height: auto;
 }
 .academyTextImg{
     display:flex;
@@ -256,15 +258,27 @@ section img#mountains_front{
         align-items: center;
     }
 }
-@media screen and (max-width: 844px) { 
+@media screen and (max-width: 845px) { 
+    .video {
+        width: 360px;
+        height: 160px;
+    }
     .academyTextImg p{
         font-size: 12px;
     }
+    .sec p {
+        font-size: 1em;
+    }
     #academy_header {
-        font-size: 2em;
+        font-size: 1em;
+        text-align: center;
+        white-space: nowrap;
     }
     #academy {
-        font-size: 2em;
+        font-size: 1em;
+        text-align: center;
+        white-space: nowrap;
+        
     }
     .navbar__menu {
         overflow-x: hidden;
@@ -353,6 +367,23 @@ section img#mountains_front{
         margin-left: -90px;
         text-transform: uppercase;
         letter-spacing: 0px;
+    
+}
+.sec3 a{
+    padding-left: 10%;
+    padding-right: 15%;
+}
+.sec3 i{
+    color: #fff;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 3rem;
+}
+
+.sec3 {
+  
+    padding: 50px;
+
     
 }
 #mobile-menu {
