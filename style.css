@@ -90,19 +90,27 @@ section::before{
     overflow: hidden;
 }
 #ninja1 {
+    max-width: 150px;
+    height: auto;
     top: 380px;
     left: 250px;
     
 }
 #ninja2 {
+    max-width: 150px;
+    height: auto;
     top: 200px;
     left: 280px;
 }
 #ninja3 {
+    max-width: 150px;
+    height: auto;
     top: 120px;
     left: 150px;
 }
 #ninja4 {
+    max-width: 150px;
+    height: auto;
     top: 370px;
     left: 270px;
 }
@@ -127,9 +135,10 @@ section img#mountains_front{
     z-index: 10;
 
 }
+
 .img-container {
     position: relative;
-    max-width: 1200px;
+    
 }
 #text {
     position: absolute;
@@ -220,6 +229,7 @@ section img#mountains_front{
 }
 
 .slideninja1 {
+    
     width: 100%;
     background: #1c0522;
     display: flex;
@@ -246,12 +256,22 @@ section img#mountains_front{
         align-items: center;
     }
 }
-@media screen and (max-width: 840px) { 
+@media screen and (max-width: 844px) { 
+    .academyTextImg p{
+        font-size: 12px;
+    }
+    #academy_header {
+        font-size: 2em;
+    }
+    #academy {
+        font-size: 2em;
+    }
     .navbar__menu {
+        overflow-x: hidden;
         display: grid;
         grid-template-columns: auto;
         margin:0;
-        width: 150%;
+        width: 20%;
         position: absolute;
         top: -1000px;
         opacity: 1;
@@ -262,7 +282,7 @@ section img#mountains_front{
       }
       .navbar__menu.active {
         background: #2B1055;
-        
+        width: 100%;
         top: 100%;
         margin-left: -100px;
         opacity: 1;
@@ -273,26 +293,37 @@ section img#mountains_front{
         justify-content: flex-start;
       }
     header {
+       
         background: #2B1055;
     }
     #ninja1 {
+        max-width: 150px;
         top: 380px;
         left: -240px;
+        overflow-x: hidden;
+        overflow-y: hidden;
         
     }
     #ninja2 {
         top: 200px;
         left: -150px;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
     #ninja3 {
         top: 60px;
         left: -220px;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
     #ninja4 {
         top: 300px;
         left: -220px;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
     #text {
+        
         position: absolute;
         color: #fff;
         white-space: nowrap;
