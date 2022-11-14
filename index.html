@@ -10,13 +10,20 @@
   </head>
   <body>
     <header>
+     
       <a href="index.html" class="logo">CryptoNinjas</a>
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+        <ul class="navbar__menu">
+        <li ><a href="#">Home</a></li>
         <li><a href="#sec">About</a></li>
         <li><a href="#academy">Academy</a></li>
         <li><a href="#assd">Contact</a></li>
       </ul>
+    
     </header>
     <div class="img-container">
       <img src="images/ninja.png" id="ninja1" class="ninjas" />
@@ -52,7 +59,9 @@
         ></iframe>
         
       </div>
+      
       <div class="sec3" id="assd">
+        
         <a href="https://discord.gg/cryptoninjas" target="_blank"><i class="fab fa-discord" aria-hidden="true"></i></a>
         <a href="https://t.me/cryptoninjas_academy" target="_blank"><i class="fab fa-telegram" aria-hidden="true"></i></a>
         <a href="https://www.youtube.com/channel/UC9IFqTtRuTC0Q-3_qQY9wTA" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
@@ -108,7 +117,15 @@
       let btn = document.getElementById("btn");
       let text = document.getElementById("text");
       let header = document.querySelector("header");
-
+      const menu = document.querySelector('#mobile-menu');
+      const menuLinks = document.querySelector('.navbar__menu')
+  
+      
+      const mobileMenu = () => {
+            menu.classList.toggle('is-active') 
+            menuLinks.classList.toggle('active');
+          }
+      menu.addEventListener('click', mobileMenu);
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
 
@@ -133,7 +150,9 @@
         ninja6.style.bottom = value * 2.5 + "px";
         ninja6.style.marginLeft = value * 1.5 + "px";
         asd.style.marginLeft = value * 5 + "px";
+        console.log(value); 
       });
+      
     </script>
   </body>
 </html>
