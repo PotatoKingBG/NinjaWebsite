@@ -264,7 +264,7 @@ section img#mountains_front{
 @media screen and (max-width: 845px) { 
     .video {
         width: 100%;
-        height: 50vh;
+        
         
     }
     .academyTextImg p{
@@ -319,26 +319,26 @@ section img#mountains_front{
     }
     #ninja1 {
         max-width: 150px;
-        top: 380px;
+        top: 570px;
         left: -240px;
         overflow-x: hidden;
         overflow-y: hidden;
         
     }
     #ninja2 {
-        top: 200px;
+        top: 400px;
         left: -150px;
         overflow-y: hidden;
         overflow-x: hidden;
     }
     #ninja3 {
-        top: 60px;
-        left: -220px;
+        top: 280px;
+        left: -250px;
         overflow-y: hidden;
         overflow-x: hidden;
     }
     #ninja4 {
-        top: 300px;
+        top: 600px;
         left: -220px;
         overflow-y: hidden;
         overflow-x: hidden;
